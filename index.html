@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>O-Level Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>O-Level Student Management System (Form 1 – Form 4)</h2>
+
+<div class="container">
+    <h3>Student Registration</h3>
+
+    <input type="text" id="id" placeholder="Student ID"><br><br>
+    <input type="text" id="name" placeholder="Full Name"><br><br>
+    <input type="number" id="age" placeholder="Age"><br><br>
+
+    <select id="gender">
+        <option value="">Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+
+    <select id="form">
+        <option value="">Form</option>
+        <option value="1">Form 1</option>
+        <option value="2">Form 2</option>
+        <option value="3">Form 3</option>
+        <option value="4">Form 4</option>
+    </select>
+
+    <button onclick="registerStudent()">Register</button>
+</div>
+
+<div class="container">
+    <h3>Students List</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Form</th>
+                <th>Average</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+</div>
+
+<script src="script.js">
+
+</script>
+
+</body>
+</html>
